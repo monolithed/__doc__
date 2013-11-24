@@ -43,7 +43,7 @@ ECMAScript 5: Object.defineProperty
 
 ### Usage
 
-*Docstrings can be accessed by the __doc__ property on functions. <br />
+*Docstrings can be accessed by the \_\_doc\_\_ property on functions. <br />
 The following JavaScript example shows the declaration of docstrings within a source file:*
 
 ```js
@@ -54,6 +54,9 @@ var test = function ( data ) {
 console.log(test.__doc__);  // @params {string} data
 
 ```
+
+The docstring have to start with \/\*\* or \/\*\!
+
 
 ### Testing
 
