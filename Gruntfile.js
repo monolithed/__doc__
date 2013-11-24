@@ -12,6 +12,15 @@
 */
 
 
+/**
+ * TODO: tasks for
+ *   gem install travis-lint
+ *   gem list travis-lint
+ *   gem --version
+ *   ruby --version
+ *   travis-lint
+ */
+
 'use strict';
 
 module.exports = function (grunt) {
@@ -41,3 +50,4 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', ['jshint', 'exec:qunit']);
 	grunt.registerTask('default', 'test');
 };
+
