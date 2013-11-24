@@ -1,4 +1,7 @@
-# \_\_doc\_\_ (docstring) [![Build Status](https://travis-ci.org/monolithed/__doc__.png)](https://travis-ci.org/monolithed/__doc__)
+# \_\_doc\_\_ (docstring)
+
+[![Build Status](https://travis-ci.org/monolithed/__doc__.png)](https://travis-ci.org/monolithed/__doc__)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/monolithed/__doc__/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 Docstring is a string literal specified in source code that is used,
 like a comment, to document a specific segment of code.
