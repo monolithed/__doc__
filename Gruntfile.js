@@ -35,10 +35,7 @@ module.exports = function (grunt) {
 
 		exec: {
 			qunit: {
-				command: 'node node_modules/qunit/bin/cli.js \
-					--log "{ summary: true, errors: true }" \
-					--code ./__doc__.js \
-					--tests ./tests/__doc__.js'
+				command: 'node node_modules/qunit/bin/cli.js --log "{ summary: true, errors: true }" --code ./__doc__.js --tests ./tests/__doc__.js'
 			}
 		}
 	});
