@@ -1,4 +1,4 @@
-# __doc__
+# \_\_doc\_\_
 
 Docstring is a string literal specified in source code that is used,
 like a comment, to document a specific segment of code.
@@ -14,51 +14,48 @@ For more info see the following links:
 	* [Literate programming] (http://en.wikipedia.org/wiki/Literate_programming)
 
 
-## Synopsis
+### Synopsis
 
 ```js
 Function.prototype.__doc__
 ```
 
-## Installation
+### Installation
 
-#### npm
+##### npm
 
 ```sh
 npm install -g __doc__
 ```
-
 or
-
-#### git
+##### git
 
 ```sh
 git clone https://github.com/monolithed/__doc__.git
 ```
 
-## Dependencies
+### Dependencies
 
 ```
 ECMAScript 5: Object.defineProperty
 ```
 
 
-## Usage
+### Usage
 
 *Docstrings can be accessed by the __doc__ property on functions. <br />
 The following JavaScript example shows the declaration of docstrings within a source file:*
 
-```
+```js
 var test = function ( data ) {
 	/** @params {string} data */
 };
-
 
 console.log(test.__doc__);  // @params {string} data
 
 ```
 
-## Testing
+### Testing
 
 
 ```
@@ -66,24 +63,9 @@ npm install && grunt
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br />
+<br />
+<br />
 
 ##
 
