@@ -20,7 +20,7 @@
  * @license MIT
  *
  * date 24.11.13 / 2:22
- * version 0.0.1
+ * version 0.0.2
  */
 
 
@@ -29,7 +29,7 @@ Object.defineProperty(Function.prototype, '__doc__', {
 		'use strict';
 
 		var comment = this.toString(),
-			__doc__ = '';
+		    __doc__ = '';
 
 		if (comment = comment.match(/\/\*[!*]([^S\/]+)\*\//))
 			return comment[1];

@@ -346,7 +346,7 @@ test('/*! */', function (assert) {
 test('/*! */ | /** */', function (assert) {
 	var test = function ( ) {
 		/*! text */
-		/** text */
+		/** ... */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -355,7 +355,7 @@ test('/*! */ | /** */', function (assert) {
 test('/*! */ | /** */', function (assert) {
 	var test = function ( ) {
 	/*! text */
-	/** text */
+	/** ... */
 
 		void function () {
 			/*! ... */
@@ -368,7 +368,7 @@ test('/*! */ | /** */', function (assert) {
 test('/*! */ | /** */', function (assert) {
 	var test = function ( ) {
 		/*! text */
-		/** text */
+		/** ... */
 
 		void function () {
 			/*! ... */
@@ -385,7 +385,7 @@ test('/*! */ | /** */', function (assert) {
 		text
 		*/
 		/**
-		text
+		...
 		*/
 	};
 
@@ -398,7 +398,7 @@ test('/*! */ | /** */', function (assert) {
 	text
 	*/
 	/**
-	text
+	...
 	*/
 	};
 
@@ -411,7 +411,7 @@ test('/*! */ | /** */', function (assert) {
 		text
 	*/
 	/**
-		text
+		...
 	*/
 	};
 
@@ -425,7 +425,7 @@ test('/*! */ | /** */', function (assert) {
 		...
 	*/
 	/**
-		text
+		...
 		...
 	*/
 	};
@@ -517,7 +517,7 @@ test('/*! */ | /** */', function (assert) {
 test('/** */ | /*! */', function (assert) {
 	var test = function ( ) {
 		/** text */
-		/*! text */
+		/*! ... */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -526,7 +526,7 @@ test('/** */ | /*! */', function (assert) {
 test('/** */ | /*! */', function (assert) {
 	var test = function ( ) {
 	/** text */
-	/*! text */
+	/*! ... */
 
 		void function () {
 			/*! ... */
@@ -539,7 +539,7 @@ test('/** */ | /*! */', function (assert) {
 test('/** */ | /*! */', function (assert) {
 	var test = function ( ) {
 		/** text */
-		/*! text */
+		/*! ... */
 
 		void function () {
 			/** ... */
@@ -556,7 +556,7 @@ test('/** */ | /*! */', function (assert) {
 		text
 		*/
 		/*!
-		text
+		...
 		*/
 	};
 
@@ -569,7 +569,7 @@ test('/** */ | /*! */', function (assert) {
 	text
 	*/
 	/*!
-	text
+	...
 	*/
 	};
 
@@ -582,7 +582,7 @@ test('/** */ | /*! */', function (assert) {
 		text
 	*/
 	/*!
-		text
+		...
 	*/
 	};
 
@@ -596,7 +596,7 @@ test('/** */ | /*! */', function (assert) {
 		...
 	*/
 	/*!
-		text
+		...
 		...
 	*/
 	};
@@ -611,7 +611,7 @@ test('/** */ | /*! */', function (assert) {
 		...
 	*/
 	/*!
-		text
+		...
 		...
 	*/
 		void function ( ) {
@@ -688,9 +688,9 @@ test('/** */ | /*! */', function (assert) {
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
 		/** text */
-		/*! text */
-		/* text */
-		// text
+		/*! ... */
+		/* ... */
+		// ...
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -699,9 +699,9 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
 	/** text */
-	/*! text */
-	/* text */
-	// text
+	/*! ... */
+	/* ... */
+	// ...
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -710,15 +710,15 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
 		/** text */
-		/*! text */
-		/* text */
-		// text
+		/*! ... */
+		/* ... */
+		// ...
 
 		void function () {
 			/** text */
-			/*! text */
-			/* text */
-			// text
+			/*! ... */
+			/* ... */
+			// ...
 		}
 	};
 
@@ -728,15 +728,15 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 		var test = function ( ) {
 		/** text */
-		/*! text */
-		/* text */
-		// text
+		/*! ... */
+		/* ... */
+		// ...
 
 		void function () {
 			/** text */
-			/*! text */
-			/* text */
-			// text
+			/*! ... */
+			/* ... */
+			// ...
 		}
 	};
 
@@ -749,15 +749,15 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 		text
 		*/
 		/*!
-		text
+		...
 		*/
 		/*
-		text
+		...
 		*/
 		/*
-		text
+		...
 		*/
-		// text
+		// ...
 	};
 
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
@@ -769,15 +769,15 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	text
 	*/
 	/*!
-	text
+	...
 	*/
 	/*
-	text
+	...
 	*/
 	/*
-	text
+	...
 	*/
-	// text
+	// ...
 	};
 
 	equal(test.__doc__, '\n\ttext\n\t');
@@ -789,15 +789,15 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 			text
 		*/
 		/*!
-			text
+			...
 		*/
 		/*
-			text
+			...
 		*/
 		/*
-			text
+			...
 		*/
-		//  text
+		//  ...
 	};
 
 	equal(test.__doc__, '\n\t\t\ttext\n\t\t');
@@ -810,18 +810,18 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 		...
 	*/
 	/*!
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
-	//	text
+	//	...
 	};
 
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
@@ -834,36 +834,37 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 		...
 	*/
 	/*!
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
-	//	text
+	//	...
+
 		void function ( ) {
 			/**
 				text
 				...
 			*/
 			/*!
-				text
+				...
 				...
 			*/
 			/*
-				text
+				...
 				...
 			*/
 			/*
-				text
+				...
 				...
 			*/
-			//	text
+			//	...
 		};
 	};
 
@@ -876,10 +877,10 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-		// text
+		// ...
 		/** text */
-		/* text */
-		/*! text */
+		/* ... */
+		/*! ... */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -887,10 +888,10 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-	// text
+	// ...
 	/** text */
-	/* text */
-	/*! text */
+	/* ... */
+	/*! ... */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -898,16 +899,16 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-		// text
+		// ...
 		/** text */
-		/* text */
-		/*! text */
+		/* ... */
+		/*! ... */
 
 		void function () {
-			// text
+			// ...
 			/** text */
-			/* text */
-			/*! text */
+			/* ... */
+			/*! ... */
 		}
 	};
 
@@ -916,16 +917,16 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 		var test = function ( ) {
-		// text
+		// ...
 		/** text */
-		/* text */
-		/*! text */
+		/* ... */
+		/*! ... */
 
 		void function () {
-			// text
+			// ...
 			/** text */
-			/* text */
-			/*! text */
+			/* ... */
+			/*! ... */
 		}
 	};
 
@@ -934,18 +935,18 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-		// text
+		// ...
 		/**
 		text
 		*/
 		/*
-		text
+		...
 		*/
 		/*
-		text
+		...
 		*/
 		/*!
-		text
+		...
 		*/
 	};
 
@@ -954,18 +955,18 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-	// text
+	// ...
 	/**
 	text
 	*/
 	/*
-	text
+	...
 	*/
 	/*
-	text
+	...
 	*/
 	/*!
-	text
+	...
 	*/
 	};
 
@@ -974,18 +975,18 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-		//  text
+		//  ...
 		/**
 			text
 		*/
 		/*
-			text
+			...
 		*/
 		/*
-			text
+			...
 		*/
 		/*!
-			text
+			...
 		*/
 	};
 
@@ -994,21 +995,21 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-	//	text
+	//	...
 	/**
 		text
 		...
 	*/
 	/*!
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
 	};
@@ -1018,40 +1019,40 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 
 test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	var test = function ( ) {
-	//	text
+	//	...
 	/**
 		text
 		...
 	*/
 	/*!
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
 	/*
-		text
+		...
 		...
 	*/
 
 		void function ( ) {
-			//	text
+			//	...
 			/**
 				text
 				...
 			*/
 			/*!
-				text
+				...
 				...
 			*/
 			/*
-				text
+				...
 				...
 			*/
 			/*
-				text
+				...
 				...
 			*/
 		};
