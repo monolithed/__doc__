@@ -40,9 +40,9 @@
 	"preferGlobal": true,
 
 	"devDependencies": {
-		"grunt": "~0.4.1",
-		"qunit": "0.5.17",
-		"grunt-contrib-jshint": "~0.6.0",
+		"grunt": "~0.4.2",
+		"qunit": "~0.5.17",
+		"grunt-contrib-jshint": "~0.7.1",
 		"grunt-exec": "~0.4.2"
 	},
 
