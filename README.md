@@ -55,7 +55,7 @@ console.log(test.__doc__);  // @params {string} data
 
 ```
 
-The docstring have to start with \/\*\* or \/\*\!
+The docstring have to start with /\*\* or /\*\!
 
 
 ### Testing
