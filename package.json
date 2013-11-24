@@ -1,0 +1,55 @@
+{
+	"name":        "__doc__",
+	"description": "Docstring is a string literal specified in source code that is use like a comment, to document a specific segment of code",
+	"version":     "0.0.1",
+	"author":      "Alexander Guinness <monolithed@gmail.com>",
+
+	"homepage": "https://github.com/monolithed/__doc__.git",
+
+	"contributors": [
+		{
+			"name": "Alexander Guinness"
+		}
+	],
+
+	"repository": {
+		"type": "git",
+		"url":  "https://github.com/monolithed/__doc__.git"
+	},
+
+	"keywords": [ "__doc__", "docstring", "documentation", "documentation string", "introspection", "function signature", "string literal", "JSDoc", "source code", "comments", "TDD", "unit", "testing", "tests" ],
+
+	"main": "./__doc__.js",
+
+	"bin": {
+		"__doc__": "./__doc__.js"
+	},
+
+	"engines": {
+		"node": ">=0.6.0"
+	},
+
+	"scripts": {
+		"test": "grunt test --verbose"
+	},
+
+	"dependencies": { },
+
+	"optionalDependencies": { },
+
+	"preferGlobal": true,
+
+	"devDependencies": {
+		"grunt": "~0.4.1",
+		"qunit": "0.5.17",
+		"grunt-contrib-jshint": "~0.6.0",
+		"grunt-exec": "~0.4.2"
+	},
+
+	"licenses": [
+		{
+			"type": "MIT",
+			"url":  "http: //www.opensource.org/licenses/mit-license.php"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+# Ignore rules
+
+*~
+*#*
+._*
+\#*
+
+*.bak
+.idea
+*.pyc
+*.tmp
+*.bak
+tmp
+.DS_Store
+.gitconfig
+node_modules
