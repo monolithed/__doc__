@@ -50,3 +50,4 @@ module.exports = function (grunt) {
 	grunt.registerTask('test', ['jshint', 'exec:qunit']);
 	grunt.registerTask('default', 'test');
 };
+
