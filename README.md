@@ -1,4 +1,4 @@
-# \_\_doc\_\_
+# \_\_doc\_\_ (docstring)
 
 Docstring is a string literal specified in source code that is used,
 like a comment, to document a specific segment of code.
@@ -25,7 +25,7 @@ Function.prototype.__doc__
 ##### npm
 
 ```sh
-npm install -g __doc__
+npm install -g docstring
 ```
 or
 ##### git
