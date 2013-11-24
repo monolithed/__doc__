@@ -75,3 +75,7 @@ npm install && grunt
 * Include library is licensed under the MIT (LICENSE.txt) license
 
 * Copyright (c) 2013 [Alexander Guinness] (https://github.com/monolithed)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/monolithed/__doc__/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
