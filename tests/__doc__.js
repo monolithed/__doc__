@@ -30,6 +30,8 @@ qunit.run({
 */
 
 
+'use strict';
+
 // /** */
 // --------------------------------------------
 
@@ -55,7 +57,7 @@ test('/** */', function (assert) {
 
 		void function () {
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -67,7 +69,7 @@ test('/** */', function (assert) {
 
 		void function () {
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -146,7 +148,7 @@ test('/** */', function (assert) {
 
 		void function () {
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -210,7 +212,7 @@ test('/*! */', function (assert) {
 
 		void function () {
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -222,7 +224,7 @@ test('/*! */', function (assert) {
 
 		void function () {
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -301,7 +303,7 @@ test('/*! */', function (assert) {
 
 		void function () {
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -359,7 +361,7 @@ test('/*! */ | /** */', function (assert) {
 
 		void function () {
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -373,7 +375,7 @@ test('/*! */ | /** */', function (assert) {
 		void function () {
 			/*! ... */
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -469,7 +471,7 @@ test('/*! */ | /** */', function (assert) {
 
 		void function () {
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -530,7 +532,7 @@ test('/** */ | /*! */', function (assert) {
 
 		void function () {
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -544,7 +546,7 @@ test('/** */ | /*! */', function (assert) {
 		void function () {
 			/** ... */
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -640,7 +642,7 @@ test('/** */ | /*! */', function (assert) {
 
 		void function () {
 			/** ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -719,7 +721,7 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 			/*! ... */
 			/* ... */
 			// ...
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -737,7 +739,7 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 			/*! ... */
 			/* ... */
 			// ...
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -909,7 +911,7 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 			/** text */
 			/* ... */
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
@@ -927,7 +929,7 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 			/** text */
 			/* ... */
 			/*! ... */
-		}
+		};
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');

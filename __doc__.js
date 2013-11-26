@@ -24,6 +24,7 @@
  */
 
 
+/** @namespace Function.prototype.__doc__ */
 Object.defineProperty(Function.prototype, '__doc__', {
 	get: function ( ) {
 		'use strict';
