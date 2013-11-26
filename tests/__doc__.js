@@ -35,24 +35,24 @@ qunit.run({
 // /** */
 // --------------------------------------------
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/** text */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 	/** text */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 	/** text */
 
 		void function () {
@@ -63,8 +63,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/** text */
 
 		void function () {
@@ -75,8 +75,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -85,8 +85,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 	/**
 	text
 	*/
@@ -95,8 +95,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\n\ttext\n\t');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 	/**
 		text
 	*/
@@ -105,8 +105,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 	/**
 		text
 		...
@@ -116,13 +116,13 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 	/**
 		text
 		...
 	*/
-		void function ( ) {
+		void function () {
 			/**
 			...
 			*/
@@ -132,8 +132,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/** text */
 		/** ... */
 	};
@@ -141,8 +141,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/** text */
 		/** ... */
 
@@ -154,8 +154,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -167,8 +167,8 @@ test('/** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -176,7 +176,7 @@ test('/** */', function (assert) {
 		...
 		*/
 
-		void function ( ) {
+		void function () {
 			/**
 			...
 			*/
@@ -190,24 +190,24 @@ test('/** */', function (assert) {
 // /*! */
 // --------------------------------------------
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*! text */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 	/*! text */
 	};
 
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 	/*! text */
 
 		void function () {
@@ -218,8 +218,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*! text */
 
 		void function () {
@@ -230,8 +230,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*!
 		text
 		*/
@@ -240,8 +240,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 	/*!
 	text
 	*/
@@ -250,8 +250,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\n\ttext\n\t');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 	/*!
 		text
 	*/
@@ -260,8 +260,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 	/*!
 		text
 		...
@@ -271,13 +271,13 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 	/*!
 		text
 		...
 	*/
-		void function ( ) {
+		void function () {
 			/*!
 			...
 			*/
@@ -287,8 +287,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*! text */
 		/*! ... */
 	};
@@ -296,8 +296,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*! text */
 		/*! ... */
 
@@ -309,8 +309,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*!
 		text
 		*/
@@ -322,8 +322,8 @@ test('/*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*!
 		text
 		*/
@@ -331,7 +331,7 @@ test('/*! */', function (assert) {
 		...
 		*/
 
-		void function ( ) {
+		void function () {
 			/*!
 			...
 			*/
@@ -345,8 +345,8 @@ test('/*! */', function (assert) {
 // /*! */ | /** */
 // --------------------------------------------
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*! text */
 		/** ... */
 	};
@@ -354,8 +354,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 	/*! text */
 	/** ... */
 
@@ -367,8 +367,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*! text */
 		/** ... */
 
@@ -381,8 +381,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*!
 		text
 		*/
@@ -394,8 +394,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 	/*!
 	text
 	*/
@@ -407,8 +407,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\n\ttext\n\t');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 	/*!
 		text
 	*/
@@ -420,8 +420,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 	/*!
 		text
 		...
@@ -435,8 +435,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 	/*!
 		text
 		...
@@ -445,7 +445,7 @@ test('/*! */ | /** */', function (assert) {
 		text
 		...
 	*/
-		void function ( ) {
+		void function () {
 			/*!
 			...
 			*/
@@ -455,8 +455,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*! text */
 		/** ... */
 	};
@@ -464,8 +464,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*! text */
 		/** ... */
 
@@ -477,8 +477,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*!
 		text
 		*/
@@ -490,8 +490,8 @@ test('/*! */ | /** */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/*! */ | /** */', function (assert) {
-	var test = function ( ) {
+test('/*! */ | /** */', function () {
+	var test = function () {
 		/*!
 		text
 		*/
@@ -499,7 +499,7 @@ test('/*! */ | /** */', function (assert) {
 		...
 		*/
 
-		void function ( ) {
+		void function () {
 			/*!
 			...
 			*/
@@ -516,8 +516,8 @@ test('/*! */ | /** */', function (assert) {
 // /*! */ | /** */
 // --------------------------------------------
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/** text */
 		/*! ... */
 	};
@@ -525,8 +525,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 	/** text */
 	/*! ... */
 
@@ -538,8 +538,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/** text */
 		/*! ... */
 
@@ -552,8 +552,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -565,8 +565,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 	/**
 	text
 	*/
@@ -578,8 +578,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\n\ttext\n\t');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 	/**
 		text
 	*/
@@ -591,8 +591,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 	/**
 		text
 		...
@@ -606,8 +606,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 	/**
 		text
 		...
@@ -616,7 +616,7 @@ test('/** */ | /*! */', function (assert) {
 		...
 		...
 	*/
-		void function ( ) {
+		void function () {
 			/*!
 			...
 			*/
@@ -626,8 +626,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/** text */
 		/*! ... */
 	};
@@ -635,8 +635,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/** text */
 		/*! ... */
 
@@ -648,8 +648,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -661,8 +661,8 @@ test('/** */ | /*! */', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/** */ | /*! */', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -670,7 +670,7 @@ test('/** */ | /*! */', function (assert) {
 		...
 		*/
 
-		void function ( ) {
+		void function () {
 			/**
 			...
 			*/
@@ -687,8 +687,8 @@ test('/** */ | /*! */', function (assert) {
 // /** */ | /*! */ | /* */ | //
 // --------------------------------------------
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		/** text */
 		/*! ... */
 		/* ... */
@@ -698,8 +698,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	/** text */
 	/*! ... */
 	/* ... */
@@ -709,8 +709,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		/** text */
 		/*! ... */
 		/* ... */
@@ -727,12 +727,12 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-		var test = function ( ) {
-		/** text */
-		/*! ... */
-		/* ... */
-		// ...
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
+	/** text */
+	/*! ... */
+	/* ... */
+	// ...
 
 		void function () {
 			/** text */
@@ -745,8 +745,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		/**
 		text
 		*/
@@ -765,8 +765,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	/**
 	text
 	*/
@@ -785,8 +785,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\ttext\n\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		/**
 			text
 		*/
@@ -805,8 +805,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\t\t\ttext\n\t\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	/**
 		text
 		...
@@ -829,8 +829,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	/**
 		text
 		...
@@ -849,7 +849,7 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	*/
 	//	...
 
-		void function ( ) {
+		void function () {
 			/**
 				text
 				...
@@ -877,8 +877,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 // // | /** */ | /* */ | | /*! */
 // --------------------------------------------
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		// ...
 		/** text */
 		/* ... */
@@ -888,8 +888,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	// ...
 	/** text */
 	/* ... */
@@ -899,8 +899,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		// ...
 		/** text */
 		/* ... */
@@ -917,12 +917,12 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-		var test = function ( ) {
-		// ...
-		/** text */
-		/* ... */
-		/*! ... */
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
+	// ...
+	/** text */
+	/* ... */
+	/*! ... */
 
 		void function () {
 			// ...
@@ -935,8 +935,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\u0020text\u0020');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		// ...
 		/**
 		text
@@ -955,8 +955,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	// ...
 	/**
 	text
@@ -975,8 +975,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\ttext\n\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 		//  ...
 		/**
 			text
@@ -995,8 +995,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\t\t\ttext\n\t\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	//	...
 	/**
 		text
@@ -1019,8 +1019,8 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 	equal(test.__doc__, '\n\t\ttext\n\t\t...\n\t');
 });
 
-test('/** */ | /*! */ | /* */ | // ', function (assert) {
-	var test = function ( ) {
+test('/** */ | /*! */ | /* */ | // ', function () {
+	var test = function () {
 	//	...
 	/**
 		text
@@ -1039,7 +1039,7 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 		...
 	*/
 
-		void function ( ) {
+		void function () {
 			//	...
 			/**
 				text
@@ -1067,56 +1067,56 @@ test('/** */ | /*! */ | /* */ | // ', function (assert) {
 // Empty string
 // --------------------------------------------
 
-test(' ', function (assert) {
-	var test = function ( ) {
+test(' ', function () {
+	var test = function () {
 
 	};
 
 	equal(test.__doc__, '');
 });
 
-test('/***/', function (assert) {
-	var test = function ( ) {
+test('/***/', function () {
+	var test = function () {
 		/***/
 	};
 
 	equal(test.__doc__, '');
 });
 
-test('/** */', function (assert) {
-	var test = function ( ) {
+test('/** */', function () {
+	var test = function () {
 		/** */
 	};
 
 	equal(test.__doc__, ' ');
 });
 
-test('/*! */', function (assert) {
-	var test = function ( ) {
+test('/*! */', function () {
+	var test = function () {
 		/*! */
 	};
 
 	equal(test.__doc__, ' ');
 });
 
-test('/* */', function (assert) {
-	var test = function ( ) {
+test('/* */', function () {
+	var test = function () {
 		/* */
 	};
 
 	equal(test.__doc__, '');
 });
 
-test('/* */', function (assert) {
-	var test = function ( ) {
+test('/* */', function () {
+	var test = function () {
 		/* */
 	};
 
 	equal(test.__doc__, '');
 });
 
-test('/***/', function (assert) {
-	var test = function ( ) {
+test('/***/', function () {
+	var test = function () {
 		/***/
 		/*!*/
 		/**/
@@ -1126,8 +1126,8 @@ test('/***/', function (assert) {
 	equal(test.__doc__, '');
 });
 
-test('/***/', function (assert) {
-	var test = function ( ) {
+test('/***/', function () {
+	var test = function () {
 		/** */
 		/*! */
 		/* */
