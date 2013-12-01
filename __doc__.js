@@ -20,12 +20,13 @@
  * @license MIT
  *
  * date 24.11.13 / 2:22
- * version 0.0.2
+ * version 0.0.3
  */
 
 
 /** @namespace Function.prototype.__doc__ */
 Object.defineProperty(Function.prototype, '__doc__', {
+	/** @this Function */
 	get: function ( ) {
 		'use strict';
 
