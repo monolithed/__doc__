@@ -39,6 +39,10 @@ module.exports = function (grunt) {
 					'--log "{ summary: true, errors: true }" ' +
 					'--code ./__doc__.js ' +
 					'--tests ./tests/__doc__.js'
+			},
+
+			export: {
+				command: 'build/export.sh'
 			}
 		}
 	});
@@ -47,6 +51,6 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-exec');
 
 	grunt.registerTask('qunit', 'exec:qunit');
-	grunt.registerTask('test', ['jshint', 'exec:qunit']);
+	grunt.registerTask('test', ['jshint', 'exec:qunit', 'exec:export']);
 	grunt.registerTask('default', 'test');
 };

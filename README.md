@@ -32,7 +32,7 @@ Function.prototype.__doc__
 ##### npm
 
 ```sh
-npm install -g docstring
+npm install docstring
 ```
 or
 ##### git

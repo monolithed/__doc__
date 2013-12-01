@@ -13,8 +13,8 @@
 [[ ${PWD##*/} == 'build' ]] || \
 	cd build
 
-path=../tools/closure-compiler
 file=../__doc__
+path=../tools/closure-compiler
 
 if [[ -f ${path}.jar ]]
 	then

@@ -6,3 +6,6 @@
 
 ### 0.0.3 / Mon Dec 2 02:09:26 2013 +0400
 * [Enhancement] Google Closure Compiler + Source Map <br />
+
+### 0.0.4 / Mon Dec 2 03:49:41 2013 +0400
+* [Critical] fixed module.export <br />
