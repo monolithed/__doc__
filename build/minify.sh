@@ -9,6 +9,10 @@
 # --compilation_level
 # QUIET | DEFAULT | VERBOSE
 
+
+[[ ${PWD##*/} == 'build' ]] || \
+	cd build
+
 path=../tools/closure-compiler
 file=../__doc__
 
@@ -66,3 +70,5 @@ if [[ -f ${path}.jar ]]
 				echo -e 'You must install the apache-ant!'
 		fi
 fi
+
+cd - &>/dev/null

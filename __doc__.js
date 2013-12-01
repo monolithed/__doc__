@@ -12,15 +12,14 @@
  * The first statement should start with /** or /*!
  *
  * @author Alexander Guinness <monolithed@gmail.com>
+ * @version 0.0.3
+ * @license MIT
  *
  * @see:
  *    http://www.python.org/dev/peps/pep-0257/
  *    http://en.wikipedia.org/wiki/Docstring
  *
- * @license MIT
- *
  * date 24.11.13 / 2:22
- * version 0.0.3
  */
 
 

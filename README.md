@@ -65,6 +65,14 @@ console.log(test.__doc__);  // @params {string} data
 The docstring have to start with /\*\* or /\*\!
 
 
+### Minification/Source Map
+
+
+```
+build/minify.sh
+```
+
+
 ### Testing
 
 
