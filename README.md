@@ -81,12 +81,18 @@ npm install && grunt
 ```
 
 
-<br />
-<br />
-<br />
+### Contributing
+
+
+* Fork the one
+* Create a topic branch
+* Make the commits
+* Write the tests
+* Submit Pull Request once Tests are Passing
+
+
 
 ##
 
 * Include library is licensed under the MIT (LICENSE.txt) license
-
 * Copyright (c) 2013 [Alexander Guinness] (https://github.com/monolithed)
