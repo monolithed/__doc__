@@ -33,7 +33,7 @@ Object.defineProperty(Function.prototype, '__doc__', {
 		    __doc__ = '';
 
 		if (comment = comment.match(/\/\*[!*]([^S\/]+)\*\//))
-			return comment[1];
+			__doc__ = comment[1];
 
 		return __doc__;
 	}
