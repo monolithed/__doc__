@@ -91,8 +91,9 @@ npm install && grunt
 * Submit Pull Request once Tests are Passing
 
 
+｡◕‿◕｡
 
 ##
 
-* Include library is licensed under the MIT (LICENSE.txt) license
+* The library is licensed under the MIT (LICENSE.txt) license
 * Copyright (c) 2013 [Alexander Guinness] (https://github.com/monolithed)
