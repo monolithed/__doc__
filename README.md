@@ -1,11 +1,14 @@
 # \_\_doc\_\_ (docstring)
 
 [![Build Status](https://travis-ci.org/monolithed/__doc__.png)](https://travis-ci.org/monolithed/__doc__)
-[![Coverage Status](https://coveralls.io/repos/monolithed/__doc__/badge.png)](https://coveralls.io/r/monolithed/__doc__)
 [![Dependency Status](https://gemnasium.com/monolithed/__doc__.png)](https://gemnasium.com/monolithed/__doc__)
 [![Code Climate](https://codeclimate.com/repos/5294fd8356b1024752046244/badges/6ff4cf0a66daa819ebe8/gpa.png)](https://codeclimate.com/repos/5294fd8356b1024752046244/feed)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/monolithed/__doc__/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+<!---
+	[![Coverage Status](https://coveralls.io/repos/monolithed/__doc__/badge.png)](https://coveralls.io/r/monolithed/__doc__)
+-->
 
+[![NPM](https://nodei.co/npm/docstring.png?downloads=true)](https://nodei.co/npm/docstring/)
 
 Docstring is a string literal specified in source code that is used,
 like a comment, to document a specific segment of code.
@@ -79,6 +82,11 @@ build/minify.sh
 ```
 npm install && grunt
 ```
+
+
+### Inspired by
+
+[PEP-0257] (http://www.python.org/dev/peps/pep-0257/)
 
 
 ### Contributing
