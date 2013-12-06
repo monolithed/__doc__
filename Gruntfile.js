@@ -12,18 +12,9 @@
 */
 
 
-/**
- * TODO: tasks for
- *   gem install travis-lint
- *   gem list travis-lint
- *   gem --version
- *   ruby --version
- *   travis-lint
- */
-
-'use strict';
-
 module.exports = function (grunt) {
+	'use strict';
+
 	grunt.config.init({
 		jshint: {
 			options: {
