@@ -90,9 +90,6 @@ npm install && grunt
 * Write the tests
 * Submit Pull Request once Tests are Passing
 
-
-｡◕‿◕｡
-
 ##
 
 * The library is licensed under the MIT (LICENSE.txt) license
