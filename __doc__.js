@@ -12,7 +12,7 @@
  * The first statement should start with /** or /*!
  *
  * @author Alexander Guinness <monolithed@gmail.com>
- * @version 0.0.5
+ * @version 0.0.6
  * @license MIT
  *
  * @see:

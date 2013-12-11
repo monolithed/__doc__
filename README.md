@@ -15,7 +15,6 @@ like a comment, to document a specific segment of code.
 
 A docstring occurs as the first statement in a module, function, class, or method definition.
 
-
 Languages that support docstrings include Python, Lisp, Elixir, and Clojure.
 
 For more info see the following links:
@@ -68,26 +67,35 @@ console.log(test.__doc__);  // @params {string} data
 The docstring have to start with /\*\* or /\*\!
 
 
-### Minification/Source Map
-
+## Deployment
 
 ```
-build/minify.sh
+npm install
+```
+
+
+### Minification / Source Map
+
+```
+grunt minify
 ```
 
 
 ### Testing
 
+```
+grunt test
+```
+
+### Export
 
 ```
-npm install && grunt
+grunt export
 ```
-
 
 ### Inspired by
 
 [PEP-0257] (http://www.python.org/dev/peps/pep-0257/)
-
 
 ### Contributing
 
@@ -95,7 +103,7 @@ npm install && grunt
 * Fork the one
 * Create a topic branch
 * Make the commits
-* Write the tests
+* Write the tests and run grunt test minify
 * Submit Pull Request once Tests are Passing
 
 ##

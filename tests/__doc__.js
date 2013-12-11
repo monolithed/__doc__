@@ -12,24 +12,6 @@
 */
 
 
-/*
-var qunit = require('qunit');
-
-qunit.setup({
-	log: {
-		summary: true,
-		errors:  true
-	}
-});
-
-qunit.run({
-	code: '../__doc__.js',
-	tests: './__doc__.js'
-});
-
-*/
-
-
 'use strict';
 
 // /** */

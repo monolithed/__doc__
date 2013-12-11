@@ -11,7 +11,6 @@
  * version 0.0.2
 */
 
-
 module.exports = function (grunt) {
 	'use strict';
 
@@ -26,14 +25,15 @@ module.exports = function (grunt) {
 
 		exec: {
 			qunit: {
-				command: 'node node_modules/qunit/bin/cli.js ' +
-					'--log "{ summary: true, errors: true }" ' +
-					'--code ./__doc__.js ' +
-					'--tests ./tests/__doc__.js'
+				command: 'build/tests.js'
 			},
 
 			export: {
 				command: 'build/export.sh'
+			},
+
+			minify: {
+				command: 'build/minify.sh'
 			}
 		}
 	});
@@ -41,7 +41,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-exec');
 
-	grunt.registerTask('qunit', 'exec:qunit');
-	grunt.registerTask('test', ['jshint', 'exec:qunit', 'exec:export']);
+	grunt.registerTask('export', 'exec:export');
+	grunt.registerTask('minify', 'exec:minify');
+
+	grunt.registerTask('test', ['jshint', 'exec:qunit']);
 	grunt.registerTask('default', 'test');
 };
