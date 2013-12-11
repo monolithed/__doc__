@@ -8,7 +8,10 @@
 * [Enhancement] Google Closure Compiler + Source Map <br />
 
 ### 0.0.4 / Mon Dec 2 03:49:41 2013 +0400
-* [Critical] fixed module.export <br />
+* [Critical] Fixed module.export <br />
 
 ### 0.0.5 / Wed Dec 11 01:16:25 2013 +0400
 * [Enhancement] npm-shrinkwrap.json <br />
+
+### 0.0.6 / Wed Dec 11 14:16:11 2013 +0400
+* [Refactring] Refactring for Gruntfile.js  <br />
