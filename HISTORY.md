@@ -18,3 +18,6 @@
 
 ### 0.0.7 / Thu Jan 2 23:01:15 2014 +0400
 * [Refactoring] grunt-version <br />
+
+### 0.0.8 / Thu Jan 2 23:50:13 2014 +0400
+* [Refactoring] dev refactoring <br />
