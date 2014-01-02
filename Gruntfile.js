@@ -53,7 +53,7 @@ module.exports = function (grunt) {
 			},
 
 			shrinkwrap: {
-				command: 'npm shrinkwrap --dev'
+				command: 'npm shrinkwrap --dev | tee'
 			}
 		}
 	});
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('export', 'exec:export');
 	grunt.registerTask('minify', 'exec:minify');
 
-	grunt.registerTask('test', ['jshint', 'exec:shrinkwrap --force', 'exec:qunit']);
+	grunt.registerTask('test', ['jshint', 'exec:shrinkwrap', 'exec:qunit']);
 	grunt.registerTask('dev', ['default', 'devUpdate:main', 'minify']);
 	grunt.registerTask('default', ['version', 'test']);
 };
