@@ -18,7 +18,7 @@
  * @preserve
  * @author Alexander Guinness <monolithed@gmail.com>
  * @summary https://github.com/monolithed/__doc__
- * @version 0.0.8
+ * @version 0.0.9
  * @license MIT
  *
  * date 24.11.13 / 2:22

@@ -1,6 +1,6 @@
 {
   "name": "docstring",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "dependencies": {
     "grunt-exec": {
       "version": "0.4.2",
