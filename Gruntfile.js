@@ -4,23 +4,31 @@
  * Tasks for the __doc__
  *
  * @author Alexander Guinness <monolithed@gmail.com>
- * @see https://github.com/kof/node-qunit
  * @license MIT
- *
- * date: 24.11.13 / 8:25
- * version 0.0.2
 */
 
 module.exports = function (grunt) {
 	'use strict';
 
 	grunt.config.init({
+		pkg: grunt.file.readJSON('package.json'),
+		name: '<%= pkg.config.name %>',
+
+		version: {
+			options: {
+				prefix: '@version\\s*'
+			},
+
+			src: '<%= name %>.js',
+			min: '<%= name %>.min.js'
+		},
+
 		jshint: {
 			options: {
 				jshintrc: '.jshintrc'
 			},
 
-			files: ['Gruntfile.js', '__doc__.js', 'test/**/*.js']
+			files: ['Gruntfile.js', '<%= name %>.js', 'test/**/*.js']
 		},
 
 		exec: {
@@ -39,11 +47,12 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-version');
 	grunt.loadNpmTasks('grunt-exec');
 
 	grunt.registerTask('export', 'exec:export');
 	grunt.registerTask('minify', 'exec:minify');
 
 	grunt.registerTask('test', ['jshint', 'exec:qunit']);
-	grunt.registerTask('default', 'test');
+	grunt.registerTask('default', ['version', 'test']);
 };

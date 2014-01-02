@@ -17,7 +17,13 @@
 		"url":  "https://github.com/monolithed/__doc__.git"
 	},
 
+	"config": {
+		"name": "__doc__"
+	},
+
 	"keywords": [ "__doc__", "docstring", "documentation", "documentation string", "introspection", "function signature", "string literal", "JSDoc", "source code", "comments", "TDD", "unit", "testing", "tests" ],
+
+	"man": "README.md",
 
 	"main": "./__doc__.js",
 
@@ -41,6 +47,7 @@
 		"grunt": "0.4.2",
 		"qunit": "0.5.16",
 		"grunt-contrib-jshint": "0.7.1",
+		"grunt-version": "0.2.2",
 		"grunt-exec": "0.4.2"
 	},
 
