@@ -1,8 +1,8 @@
 {
-	"version":   3,
-	"file":      "../__doc__.min.js",
-	"lineCount": 10,
-	"mappings":  "A;;;;;;;;;AA0BAA,MAAAC,eAAA,CAAsBC,QAAAC,UAAtB,CAA0C,SAA1C,CAAqD,KAE/CC,QAAS,EAAI,CAAA,IAGbC,EAAU,IAAAC,SAAA,EAHG,CAIbC,EAAU,EAEd,IAAIF,CAAJ,CAAcA,CAAAG,MAAA,CAAc,uBAAd,CAAd,CACCD,CAAA,CAAUF,CAAA,CAAQ,CAAR,CAEX,OAAOE,EATU,CAFkC,CAArD;",
-	"sources":   ["../__doc__.js"],
-	"names":     ["Object","defineProperty","Function","prototype","get","comment","toString","__doc__","match"]
+"version":3,
+"file":"../__doc__.min.js",
+"lineCount":10,
+"mappings":"A;;;;;;;;;AA2BAA,MAAAC,eAAA,CAAsBC,QAAAC,UAAtB,CAA0C,SAA1C,CAAqD,KAE/CC,QAAS,EAAI,CAAA,IAGbC,EAAU,IAAAC,SAAA,EAHG,CAIbC,EAAU,EAEd,IAAIF,CAAJ,CAAcA,CAAAG,MAAA,CAAc,uBAAd,CAAd,CACCD,CAAA,CAAUF,CAAA,CAAQ,CAAR,CAEX,OAAOE,EATU,CAFkC,CAArD;",
+"sources":["../__doc__.js"],
+"names":["Object","defineProperty","Function","prototype","get","comment","toString","__doc__","match"]
 }

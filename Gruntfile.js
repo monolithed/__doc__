@@ -42,6 +42,10 @@ module.exports = function (grunt) {
 
 			minify: {
 				command: 'build/minify.sh'
+			},
+
+			shrinkwrap: {
+				command: 'npm shrinkwrap --dev'
 			}
 		}
 	});
@@ -53,6 +57,7 @@ module.exports = function (grunt) {
 	grunt.registerTask('export', 'exec:export');
 	grunt.registerTask('minify', 'exec:minify');
 
-	grunt.registerTask('test', ['jshint', 'exec:qunit']);
+	grunt.registerTask('test', ['jshint', 'exec:shrinkwrap', 'exec:qunit']);
+	grunt.registerTask('dev', ['default', 'minify']);
 	grunt.registerTask('default', ['version', 'test']);
 };

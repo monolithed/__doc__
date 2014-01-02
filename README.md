@@ -103,7 +103,7 @@ grunt export
 * Fork the one
 * Create a topic branch
 * Make the commits
-* Write the tests and run grunt test minify
+* Write the tests and run `grunt dev`
 * Submit Pull Request once Tests are Passing
 
 ##

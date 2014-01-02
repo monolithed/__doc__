@@ -1,17 +1,16 @@
-# Ignore rules
-
 *~
 *#*
 ._*
 \#*
 
-*.bak
-.idea
 *.pyc
+*.bak
 *.tmp
 *.bak
-tmp
+.idea
 .DS_Store
 .gitconfig
+.coveralls.yml
 node_modules
 npm-debug.log
+tmp
