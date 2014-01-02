@@ -11,13 +11,16 @@
 * [Critical] Fixed module.export <br />
 
 ### 0.0.5 / Wed Dec 11 01:16:25 2013 +0400
-* [Enhancement] npm-shrinkwrap.json <br />
+* [Deploy] npm-shrinkwrap.json <br />
 
 ### 0.0.6 / Wed Dec 11 14:16:11 2013 +0400
-* [Refactoring] Refactring for Gruntfile.js <br />
+* [Deploy] Refactring for Gruntfile.js <br />
 
 ### 0.0.7 / Thu Jan 2 23:01:15 2014 +0400
-* [Refactoring] grunt-version <br />
+* [Deploy] grunt-version <br />
 
 ### 0.0.8 / Thu Jan 2 23:50:13 2014 +0400
-* [Refactoring] dev refactoring <br />
+* [Deploy] shrinkwrap to grunt <br />
+
+### 0.0.9 / Fri Jan 3 01:12:04 2014 +0400
+* [Deploy] grunt-dev-update <br />
