@@ -31,6 +31,14 @@ module.exports = function (grunt) {
 			files: ['Gruntfile.js', '<%= name %>.js', 'test/**/*.js']
 		},
 
+		devUpdate: {
+			main: {
+				options: {
+					updateType: 'report'
+				}
+			}
+		},
+
 		exec: {
 			qunit: {
 				command: 'build/tests.js'
@@ -51,6 +59,7 @@ module.exports = function (grunt) {
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
+	grunt.loadNpmTasks('grunt-dev-update');
 	grunt.loadNpmTasks('grunt-version');
 	grunt.loadNpmTasks('grunt-exec');
 
@@ -58,6 +67,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('minify', 'exec:minify');
 
 	grunt.registerTask('test', ['jshint', 'exec:shrinkwrap', 'exec:qunit']);
-	grunt.registerTask('dev', ['default', 'minify']);
+	grunt.registerTask('dev', ['default', 'devUpdate:main', 'minify']);
 	grunt.registerTask('default', ['version', 'test']);
 };
