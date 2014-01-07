@@ -5,6 +5,8 @@
 [![Code Climate](https://codeclimate.com/repos/5294fd8356b1024752046244/badges/6ff4cf0a66daa819ebe8/gpa.png)](https://codeclimate.com/repos/5294fd8356b1024752046244/feed)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/monolithed/__doc__/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Gittip](http://img.shields.io/gittip/monolithed.png)](https://www.gittip.com/monolithed/)
+
 <!---
 	[![Coverage Status](https://coveralls.io/repos/monolithed/__doc__/badge.png)](https://coveralls.io/r/monolithed/__doc__)
 -->
