@@ -1,7 +1,7 @@
 {
 	"name":        "docstring",
 	"description": "__doc__ / docstring is a string literal specified in source code that is use like a comment, to document a specific segment of code",
-	"version":     "0.0.9",
+	"version":     "1.0.0",
 	"author":      "Alexander Guinness <monolithed@gmail.com>",
 
 	"homepage": "https://github.com/monolithed/__doc__.git",
@@ -45,7 +45,7 @@
 
 	"devDependencies": {
 		"grunt":                "0.4.2",
-		"qunit":                "0.5.18",
+		"qunit":                "0.6.2",
 		"grunt-dev-update":     "0.3.2",
 		"grunt-contrib-jshint": "0.8.0",
 		"grunt-version":        "0.2.2",

@@ -18,7 +18,7 @@
  * @preserve
  * @author Alexander Guinness <monolithed@gmail.com>
  * @summary https://github.com/monolithed/__doc__
- * @version 0.0.9
+ * @version 1.0.0
  * @license MIT
  *
  * date 24.11.13 / 2:22
@@ -34,9 +34,10 @@ Object.defineProperty(Function.prototype, '__doc__', {
 		var comment = this.toString(),
 		    __doc__ = '';
 
-		if (comment = comment.match(/\/\*[!*]([^S\/]+)\*\//))
+		if (comment = comment.match(/\/\*[!*]([\s\S]*?)\*\//))
 			__doc__ = comment[1];
 
 		return __doc__;
 	}
 });
+

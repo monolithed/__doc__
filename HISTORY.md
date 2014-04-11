@@ -24,3 +24,6 @@
 
 ### 0.0.9 / Fri Jan 3 01:12:04 2014 +0400
 * [Deploy] grunt-dev-update <br />
+
+### 1.0.0 / Fri Jan 3 01:12:04 2014 +0400
+* [Critical][Release] Fixed the main regular expression <br />

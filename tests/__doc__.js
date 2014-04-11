@@ -1097,7 +1097,7 @@ test('/* */', function () {
 	equal(test.__doc__, '');
 });
 
-test('/***/', function () {
+test('/***.../', function () {
 	var test = function () {
 		/***/
 		/*!*/
@@ -1108,7 +1108,7 @@ test('/***/', function () {
 	equal(test.__doc__, '');
 });
 
-test('/***/', function () {
+test('/** *.../', function () {
 	var test = function () {
 		/** */
 		/*! */
