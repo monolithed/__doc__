@@ -1,69 +1,69 @@
 {
-    "name": "docstring",
-    "description": "__doc__ / docstring is a string literal specified in source code that is use like a comment, to document a specific segment of code",
-    "version": "1.0.2",
-    "author": "Alexander Guinness <monolithed@gmail.com>",
-    "homepage": "https://github.com/monolithed/__doc__.git",
-    "contributors": [
-        {
-            "name": "Alexander Guinness"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/monolithed/__doc__.git"
-    },
-    "bugs": {
-        "url": "https://github.com/monolithed/__doc__/issues"
-    },
-    "config": {
-        "name": "__doc__"
-    },
-    "keywords": [
-        "__doc__",
-        "docstring",
-        "documentation",
-        "documentation string",
-        "introspection",
-        "function signature",
-        "string literal",
-        "JSDoc",
-        "source code",
-        "comments",
-        "TDD",
-        "unit",
-        "testing",
-        "tests"
-    ],
-    "man": "README.md",
-    "main": "./__doc__.js",
-    "bin": {
-        "__doc__": "./__doc__.js"
-    },
-    "engines": {
-        "node": ">=0.6.0"
-    },
-    "scripts": {
-        "start": "node --harmony ./node_modules/.bin/grunt start",
-        "test": "grunt test --verbose"
-    },
-    "dependencies": {},
-    "optionalDependencies": {},
-    "devDependencies": {
-        "grunt": "0.4.5-0",
-        "qunit": "0.6.2",
-        "grunt-dev-update": "0.3.2",
-        "grunt-cli": "0.1.13",
-        "grunt-contrib-jshint": "0.8.0",
-        "grunt-version": "0.2.2",
-        "grunt-exec": "0.4.3",
-        "grunt-npm-install": "0.1.0",
+  "name": "docstring",
+  "description": "__doc__ / docstring is a string literal specified in source code that is use like a comment, to document a specific segment of code",
+  "version": "1.0.3",
+  "author": "Alexander Guinness <monolithed@gmail.com>",
+  "homepage": "https://github.com/monolithed/__doc__.git",
+  "contributors": [
+    {
+      "name": "Alexander Guinness"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/monolithed/__doc__.git"
+  },
+  "bugs": {
+    "url": "https://github.com/monolithed/__doc__/issues"
+  },
+  "config": {
+    "name": "__doc__"
+  },
+  "keywords": [
+    "__doc__",
+    "docstring",
+    "documentation",
+    "documentation string",
+    "introspection",
+    "function signature",
+    "string literal",
+    "JSDoc",
+    "source code",
+    "comments",
+    "TDD",
+    "unit",
+    "testing",
+    "tests"
+  ],
+  "man": "README.md",
+  "main": "./__doc__.js",
+  "bin": {
+    "__doc__": "./__doc__.js"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "scripts": {
+    "start": "node --harmony ./node_modules/.bin/grunt start",
+    "test": "grunt test --verbose"
+  },
+  "dependencies": {},
+  "optionalDependencies": {},
+  "devDependencies": {
+    "grunt": "0.4.5-0",
+    "qunit": "0.6.2",
+    "grunt-dev-update": "0.3.2",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-jshint": "0.8.0",
+    "grunt-version": "0.2.2",
+    "grunt-exec": "0.4.3",
+    "grunt-npm-install": "0.1.0",
     "grunt-release": "0.7.0"
-    },
-    "licenses": [
-        {
-            "type": "MIT",
-            "url": "http: //www.opensource.org/licenses/mit-license.php"
-        }
-    ]
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http: //www.opensource.org/licenses/mit-license.php"
+    }
+  ]
 }
