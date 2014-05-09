@@ -5,13 +5,13 @@
  *
  * @author Alexander Guinness <monolithed@gmail.com>
  * @license MIT
-*/
+ */
 
 module.exports = function (grunt) {
 	'use strict';
 
 	grunt.config.init({
-		pkg: grunt.file.readJSON('package.json'),
+		pkg : grunt.file.readJSON('package.json'),
 		name: '<%= pkg.config.name %>',
 
 		version: {
@@ -39,6 +39,12 @@ module.exports = function (grunt) {
 			}
 		},
 
+		release: {
+			options: {
+				tagMessage: '<%= version %>'
+			}
+		},
+
 		exec: {
 			qunit: {
 				command: 'build/tests.js'
@@ -54,19 +60,32 @@ module.exports = function (grunt) {
 
 			shrinkwrap: {
 				command: 'npm shrinkwrap --dev | tee'
+			},
+
+			install: {
+				command: 'npm install'
 			}
 		}
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-dev-update');
-	grunt.loadNpmTasks('grunt-version');
-	grunt.loadNpmTasks('grunt-exec');
+	var load = ['contrib-jshint', 'dev-update', 'version', 'release', 'exec'];
 
-	grunt.registerTask('export', 'exec:export');
-	grunt.registerTask('minify', 'exec:minify');
+	load.forEach(function (task) {
+		grunt.loadNpmTasks('grunt-' + task);
+	});
 
-	grunt.registerTask('test', ['jshint', 'exec:shrinkwrap', 'exec:qunit']);
-	grunt.registerTask('dev', ['default', 'devUpdate:main', 'minify']);
-	grunt.registerTask('default', ['version', 'test']);
+	var register = {
+			export : 'exec:export',
+			minify : 'exec:minify',
+			publish: 'release',
+			test   : ['jshint', 'exec:shrinkwrap', 'exec:qunit'],
+			dev    : ['default', 'devUpdate:main', 'minify'],
+			default: ['exec:install', 'version', 'test']
+		}
+	;
+
+	for (var task in register) {
+		if (Object.prototype.hasOwnProperty.call(register, task))
+			grunt.registerTask(task, register[task]);
+	}
 };
