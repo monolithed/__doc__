@@ -60,15 +60,11 @@ module.exports = function (grunt) {
 
 			shrinkwrap: {
 				command: 'npm shrinkwrap --dev | tee'
-			},
-
-			install: {
-				command: 'npm install'
 			}
 		}
 	});
 
-	var load = ['contrib-jshint', 'dev-update', 'version', 'release', 'exec'];
+	var load = ['contrib-jshint', 'dev-update', 'version', 'release', 'exec', 'npm-install'];
 
 	load.forEach(function (task) {
 		grunt.loadNpmTasks('grunt-' + task);
@@ -80,7 +76,7 @@ module.exports = function (grunt) {
 			publish: 'release',
 			test   : ['jshint', 'exec:shrinkwrap', 'exec:qunit'],
 			dev    : ['default', 'devUpdate:main', 'minify'],
-			default: ['exec:install', 'version', 'test']
+			default: ['npm-install', 'version', 'test']
 		}
 	;
 
