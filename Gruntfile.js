@@ -71,14 +71,13 @@ module.exports = function (grunt) {
 	});
 
 	var register = {
-			export : 'exec:export',
-			minify : 'exec:minify',
-			publish: 'release',
-			test   : ['jshint', 'exec:shrinkwrap', 'exec:qunit'],
-			dev    : ['default', 'devUpdate:main', 'minify'],
-			default: ['npm-install', 'version', 'test']
-		}
-	;
+		export : 'exec:export',
+		minify : 'exec:minify',
+		publish: 'release',
+		test   : ['jshint', 'exec:shrinkwrap', 'exec:qunit'],
+		dev    : ['default', 'devUpdate:main', 'minify'],
+		default: ['npm-install', 'version', 'test']
+	};
 
 	for (var task in register) {
 		if (Object.prototype.hasOwnProperty.call(register, task))
