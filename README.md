@@ -70,6 +70,17 @@ console.log(test.__doc__);  // @params {string} data
 The docstring have to start with /\*\* or /\*\!
 
 
+### Preserve directives
+
+
+```
+/** @preserve */ — [Google Closure Compiler] (https://developers.google.com/closure/compiler/docs/js-for-compiler)
+/*! .. */ — [UglifyJS] (http://lisperator.net/uglifyjs/) 
+```
+
+This annotation allows important notices (such as legal licenses or copyright text) to survive compilation unchanged. Line breaks are preserved
+
+
 ## Deployment
 
 ```
