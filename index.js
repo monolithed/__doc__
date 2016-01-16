@@ -16,28 +16,25 @@
  *    http://en.wikipedia.org/wiki/Docstring
  *
  * @preserve
- * @author Alexander Guinness <monolithed@gmail.com>
+ * @author Alexander Abashkin <monolithed@gmail.com>
  * @summary https://github.com/monolithed/__doc__
- * @version 1.0.2
  * @license MIT
  *
  * date 24.11.13 / 2:22
  */
 
-
 /** @namespace Function.prototype.__doc__ */
 Object.defineProperty(Function.prototype, '__doc__', {
-	/** @this Function */
-	get: function ( ) {
+	get: function () {
 		'use strict';
 
 		var comment = this.toString(),
-		    __doc__ = '';
+			__doc__ = '';
 
-		if (comment = comment.match(/\/\*[!*]([\s\S]*?)\*\//))
+		if (comment = comment.match(/\/\*[!*]([\s\S]*?)\*\//)) {
 			__doc__ = comment[1];
+		}
 
 		return __doc__;
 	}
 });
-

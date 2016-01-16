@@ -5,12 +5,12 @@
 [![Code Climate](https://codeclimate.com/repos/5294fd8356b1024752046244/badges/6ff4cf0a66daa819ebe8/gpa.png)](https://codeclimate.com/repos/5294fd8356b1024752046244/feed)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/monolithed/__doc__/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
-Docstring is a string literal specified in source code that is used,
+`Docstring` is a string literal specified in source code that is used,
 like a comment, to document a specific segment of code.
 
 A docstring occurs as the first statement in a module, function, class, or method definition.
 
-Languages that support docstrings include Python, Lisp, Elixir, and Clojure.
+Languages that support docstrings include `Python`, `Lisp`, `Elixir`, and `Clojure`.
 
 For more info see the following links:<br />
 	* [PEP-0257] (http://www.python.org/dev/peps/pep-0257/)<br />
@@ -45,12 +45,14 @@ Object.defineProperty (ECMAScript 5)
 The following JavaScript example shows the declaration of docstrings within a source file:*
 
 ```js
+
+require('docstring');
+
 var test = function (data) {
 	/** @params {string} data */
 };
 
 console.log(test.__doc__);  // @params {string} data
-
 ```
 
 The docstring have to start with /\*\* or /\*\!
@@ -64,6 +66,7 @@ The docstring have to start with /\*\* or /\*\!
 
 This annotation allows important notices (such as legal licenses or copyright text) to survive compilation unchanged. Line breaks are preserved
 
+
 ### Testing
 
 ```
@@ -71,9 +74,11 @@ npm install
 npm test
 ```
 
+
 ### Inspired by
 
 [PEP-0257] (http://www.python.org/dev/peps/pep-0257/)
+
 
 ### Contributing
 
