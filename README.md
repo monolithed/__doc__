@@ -3,15 +3,7 @@
 [![Build Status](https://travis-ci.org/monolithed/__doc__.png)](https://travis-ci.org/monolithed/__doc__)
 [![Dependency Status](https://gemnasium.com/monolithed/__doc__.png)](https://gemnasium.com/monolithed/__doc__)
 [![Code Climate](https://codeclimate.com/repos/5294fd8356b1024752046244/badges/6ff4cf0a66daa819ebe8/gpa.png)](https://codeclimate.com/repos/5294fd8356b1024752046244/feed)
-[![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/monolithed/__doc__/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Gittip](http://img.shields.io/gittip/monolithed.png)](https://www.gittip.com/monolithed/)
-
-<!---
-	[![Coverage Status](https://coveralls.io/repos/monolithed/__doc__/badge.png)](https://coveralls.io/r/monolithed/__doc__)
--->
-
-[![NPM](https://nodei.co/npm/docstring.png?downloads=true)](https://nodei.co/npm/docstring/)
 
 Docstring is a string literal specified in source code that is used,
 like a comment, to document a specific segment of code.
@@ -20,10 +12,10 @@ A docstring occurs as the first statement in a module, function, class, or metho
 
 Languages that support docstrings include Python, Lisp, Elixir, and Clojure.
 
-For more info see the following links:
-	* [PEP-0257] (http://www.python.org/dev/peps/pep-0257/)
-	* [Docstring] (http://en.wikipedia.org/wiki/Docstring)
-	* [Literate programming] (http://en.wikipedia.org/wiki/Literate_programming)
+For more info see the following links:<br />
+	* [PEP-0257] (http://www.python.org/dev/peps/pep-0257/)<br />
+	* [Docstring] (http://en.wikipedia.org/wiki/Docstring)<br />
+	* [Literate programming] (http://en.wikipedia.org/wiki/Literate_programming)<br />
 
 
 ### Synopsis
@@ -34,22 +26,16 @@ Function.prototype.__doc__
 
 ### Installation
 
-##### npm
+#####
 
 ```sh
 npm install docstring
 ```
-or
-##### git
 
-```sh
-git clone https://github.com/monolithed/__doc__.git
-```
-
-### Dependencies
+### Requirements
 
 ```
-ECMAScript 5: Object.defineProperty
+Object.defineProperty (ECMAScript 5)
 ```
 
 
@@ -59,7 +45,7 @@ ECMAScript 5: Object.defineProperty
 The following JavaScript example shows the declaration of docstrings within a source file:*
 
 ```js
-var test = function ( data ) {
+var test = function (data) {
 	/** @params {string} data */
 };
 
@@ -78,31 +64,11 @@ The docstring have to start with /\*\* or /\*\!
 
 This annotation allows important notices (such as legal licenses or copyright text) to survive compilation unchanged. Line breaks are preserved
 
-
-## Deployment
-
-```
-npm install
-```
-
-
-### Minification / Source Map
-
-```
-grunt minify
-```
-
-
 ### Testing
 
 ```
-grunt test
-```
-
-### Export
-
-```
-grunt export
+npm install
+npm test
 ```
 
 ### Inspired by
@@ -111,14 +77,13 @@ grunt export
 
 ### Contributing
 
-
 * Fork the one
 * Create a topic branch
 * Make the commits
-* Write the tests and run `grunt dev`
+* Write the tests and run `npm test`
 * Submit Pull Request once Tests are Passing
 
 ##
 
 * The library is licensed under the MIT (LICENSE.txt) license
-* Copyright (c) 2013 [Alexander Guinness] (https://github.com/monolithed)
+* Copyright (c) 2013 [Alexander Abashkin] (https://github.com/monolithed)
